@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/NotTheWayToGo', function () {
-    return view('Bully time');
+Route::get('/welcome', function () {
+    return view('welcome');
+});
+
+Route::get('/', function () {
+    return view('login');
 });
